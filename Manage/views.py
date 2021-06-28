@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 import datetime
+
 # Create your views here.
 def home(request):
     return render(request, 'home.html')
@@ -25,7 +26,7 @@ def contact(request):
             messages.success(request, "Your message has been sent successfully!!")
     return render(request, 'contact.html')
     #return HttpResponse('This is contact') 
-
+#function closed
 def about(request):
     return render(request, 'about.html')
     #return HttpResponse('This is about') 
